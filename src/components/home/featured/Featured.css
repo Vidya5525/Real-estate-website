@@ -1,0 +1,53 @@
+.featured {
+  padding: 50px 0;
+  background-color: #f9f9f9; /* Light background color for the section */
+}
+
+.featured .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Padding for small screens */
+}
+.featured .box {
+  box-shadow: 0 0 20px rgba(112, 121, 138, 0.18);
+  border-radius: 6px;
+  text-align: center;
+  padding: 30px;
+  cursor: pointer;
+  margin: 10px; /* Margin between cards */
+  flex: 1 1 calc(20% - 20px); /* Flex-basis for 5 cards per row */
+}
+
+.featured img {
+  width: 65px;
+  height: 65px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .featured .box {
+    flex: 1 1 calc(25% - 20px); /* 4 cards per row */
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .featured .box {
+    flex: 1 1 calc(33.333% - 20px); /* 3 cards per row */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .featured .box {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .featured .box {
+    flex: 1 1 100%; /* 1 card per row */
+  }
+}
+
+.featured .box:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect on hover */
+}

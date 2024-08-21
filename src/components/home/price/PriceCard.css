@@ -1,0 +1,137 @@
+/* / General Styles */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .box {
+    background: #d43737;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    transition: transform 0.3s;
+    /* margin: 20px; */
+    margin: auto;
+  }
+  
+  .box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .topbtn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .btn3 {
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  h1 {
+    margin: 10px 0;
+    font-size: 36px;
+    color: #27ae60;
+  }
+  
+  h1 span {
+    font-size: 24px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  
+  ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  ul li label {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  ul li p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .btn5 {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .btn5:hover {
+    background: #27ae60;
+    color: #fff;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .box {
+      width: calc(50% - 40px);
+      /* margin: 8px 8px; */
+      margin: auto;
+    }
+    
+  }
+  
+  @media (max-width: 768px) {
+    .box {
+      width: 100%;
+      /* margin: 10px 10px; */
+      margin: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .box {
+      width: 100%;
+      /* margin: 8px 8px; */
+      margin: auto;
+    }
+    h3 {
+      font-size: 20px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    ul li p {
+      font-size: 12px;
+    }
+  }

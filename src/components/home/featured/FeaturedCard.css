@@ -1,0 +1,87 @@
+.featured {
+    padding: 50px 0;
+    background-color: #f9f9f9; /* Background color for the section */
+  }
+  
+  .featured .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Add padding for small screens */
+  }
+  
+  .featured .content {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    gap: 20px; /* Space between cards */
+  }
+  
+  .featured .box {
+    background: #ffffff;
+    border-radius: 6px;
+    border: 1px solid rgb(62, 28, 131, 0.1);
+    overflow: hidden;
+    transition: 0.3s;
+    flex: 1 1 calc(20% - 20px); /* 5 cards in a row with some gap */
+    margin: 10px;
+    max-width: 30%;
+    text-align: center; /* Center text inside the card */
+  }
+  
+  .featured .box img {
+    width: 100%; /* Ensure image covers the width of the box */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .featured .box h4 {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+  
+  .featured .box label {
+    display: block;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .featured .box:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .featured .box {
+      max-width: 40%;
+      flex: 1 1 calc(25% - 20px); /* 4 cards in a row for medium screens */
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .featured .box {
+      max-width: 40%;
+      flex: 1 1 calc(33.333% - 20px); /* 3 cards in a row for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .featured .box {
+      max-width: 50%;
+      flex: 1 1 calc(50% - 20px); /* 2 cards in a row for mobile screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .featured .box {
+      max-width: 70%;
+      flex: 1 1 100%; /* 1 card per row for very small screens */
+    }
+  
+    .featured .box h4 {
+      font-size: 16px; /* Smaller font size for headings */
+    }
+  
+    .featured .box label {
+      font-size: 14px; /* Smaller font size for labels */
+    }
+  }
+  

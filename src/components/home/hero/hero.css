@@ -1,0 +1,82 @@
+.hero {
+  background-image: url("../../../../public/images/banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 90vh;
+  max-width: auto;
+  width: 100%;
+}
+.hero .container {
+  padding-top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hero h1 {
+  color: #fff;
+  font-size: 60px;
+}
+.hero p {
+  color: #fff;
+  opacity: 0.8;
+}
+form {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1400px;
+}
+form input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  margin-top: 5px;
+  border-radius: 5px;
+}
+form span {
+  font-size: 14px;
+  color: grey;
+}
+input::placeholder {
+  font-size: 17px;
+  color: black;
+}
+form .box {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+form .box h4 {
+  font-weight: 500;
+}
+.btn1 {
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn1 i {
+  margin-right: 10px;
+}
+@media screen and (max-width: 800px) {
+  .hero .container {
+    padding-top: 30%;
+  }
+  form {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+}

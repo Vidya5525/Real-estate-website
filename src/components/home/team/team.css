@@ -1,0 +1,142 @@
+.team {
+  background: #f9f9f9;
+  padding: 50px 0;
+}
+
+.team .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Added padding for small screens */
+}
+
+.team .content {
+  display: flex;
+  flex-wrap: wrap; /* Allows the content to wrap on smaller screens */
+  gap: 20px; /* Space between grid items */
+}
+
+.team .box {
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid rgba(62, 28, 131, 0.1);
+  padding: 2rem;
+  transition: 0.5s;
+  flex: 1 1 calc(33.333% - 20px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team .box:hover {
+  box-shadow: 0 0 20px rgba(112, 121, 138, 0.18);
+  cursor: pointer;
+}
+
+.team .details {
+  text-align: center;
+  margin-top: 20px; /* Reduced margin for better spacing */
+}
+
+.team .img {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  position: relative;
+}
+
+.team img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image fits within the circle */
+}
+
+.team .img i {
+  color: #108be7;
+  font-size: 17px;
+  position: absolute;
+  top: 35px;
+  right: -10px;
+}
+
+.team .img::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 110px;
+  height: 110px;
+  border: 5px solid #edf0f5;
+  border-radius: 50%;
+}
+
+.team label {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.team i {
+  color: grey;
+  margin-right: 5px;
+}
+
+.team ul {
+  display: flex;
+  justify-content: center; /* Center-align icons */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin-top: 10px;
+  padding: 0;
+  list-style: none; /* Remove default list styling */
+}
+
+.team ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #f4f5f7;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.team .button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team .button i {
+  color: white;
+  font-size: 20px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .team .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team .box {
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team .details h4 {
+    font-size: 18px;
+  }
+
+  .team .button {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team .box {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+}
